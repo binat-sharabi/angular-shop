@@ -1,0 +1,5 @@
+<div *ngIf="massageService.massageList">
+  <h2>Messages</h2>
+  <button class="clear" (click)="massageService.clear()">clear</button>
+  <div *ngFor="let message of massageService.massageList">{{ message }}</div>
+</div>

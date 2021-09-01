@@ -1,1 +1,7 @@
-<p>product works!</p>
+<div class="product-image">
+  <img src="{{ product?.image }}" />
+</div>
+<div class="product-info">
+  <h5>{{ product?.title }}</h5>
+  <h6>{{ product?.price | currency: "CAD":"symbol-narrow" }}</h6>
+</div>
